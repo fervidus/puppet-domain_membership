@@ -1,23 +1,24 @@
 {
-  "name": "trlinkin-domain_membership",
-  "version": "1.2.0",
+  "name": "fervid-domain_membership",
+  "version": "1.3.0",
   "author": "Thomas Linkin <trlinkin@gmail.com>",
   "summary": "Module for managing AD domain membership of Windows systems.",
   "license": "Apache-2.0",
   "source": "https://github.com/trlinkin/puppet-domain_membership",
+  "project_page": "https://github.com/fervidus/puppet-domain_membership.git",
   "issues_url": "https://github.com/trlinkin/puppet-domain_membership/issues",
   "dependencies": [
     {
       "name": "puppetlabs/powershell",
-      "version_requirement": ">= 1.0.1"
+      "version_requirement": ">= 1.0.1 < 6.0.0"
     },
     {
       "name": "puppetlabs/stdlib",
-      "version_requirement": ">= 4.25.0"
+      "version_requirement": ">= 4.25.0 < 9.0.0"
     },
     {
       "name": "puppetlabs/reboot",
-      "version_requirement": ">= 1.0.0"
+      "version_requirement": ">= 1.0.0 < 5.0.0"
     }
   ],
   "operatingsystem_support": [
@@ -28,6 +29,8 @@
         "Server 2008 R2",
         "Server 2012",
         "Server 2012 R2",
+        "Server 2016",
+        "Server 2019",
         "7",
         "8"
       ]
@@ -44,7 +47,7 @@
     "active directory",
     "domain"
   ],
-  "pdk-version": "1.4.1",
-  "template-url": "file:///opt/puppetlabs/pdk/share/cache/pdk-templates.git",
-  "template-ref": "1.4.1-0-g52adbbb"
+  "pdk-version": "2.2.0",
+  "template-url": "pdk-default#2.2.0",
+  "template-ref": "tags/2.2.0-0-g2381db6"
 }
